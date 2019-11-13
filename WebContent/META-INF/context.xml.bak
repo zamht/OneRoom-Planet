@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context reloadable="true">
+<<<<<<< HEAD
+   <WatchedResource>WEB-INF/web.xml</WatchedResource>
+   
+    <Resource name="jdbc:OracleDB" 
+             auth="Container"
+               type="javax.sql.DataSource"
+               username="room"
+               password="room"
+               driverClassName="oracle.jdbc.driver.OracleDriver"
+               url="jdbc:oracle:thin:@localhost:1521:xe"
+               
+               maxActive="20"
+               maxIdle="10"
+               maxWait="-1"
+              
+         />
+
+</Context>
+=======
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+	 <Resource name="jdbc:kakaoDB" 
+	 			auth="Container"
+            	type="javax.sql.DataSource"
+            	username="c##hak92"
+            	password="oracle"
+            	driverClassName="oracle.jdbc.driver.OracleDriver"
+            	url="jdbc:oracle:thin:@localhost:1521:xe"
+            	
+            	maxActive="20"
+            	maxIdle="10"
+            	maxWait="-1"
+     			
+			/>
+
+</Context>
+>>>>>>> yeonghak

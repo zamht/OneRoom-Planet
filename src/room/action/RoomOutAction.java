@@ -100,9 +100,6 @@ public class RoomOutAction implements Action{
 		
 			result = dao.roomadd(vo);
 			
-			
-			//영학수정파트
-			
 			String addr1=multi.getParameter("NADDRESS");
 			String addr2=multi.getParameter("RADDRESS");
 			
@@ -114,8 +111,7 @@ public class RoomOutAction implements Action{
 			}
 			
 			System.out.println("addr1 = "+addr1+"\naddr2 = "+addr2+"\naddr = "+addr);
-					
-			
+				
 			//System.out.println("multi.getParameter(\"lat\")="+String.valueOf(multi.getParameter("lat")));
 			String lat=String.valueOf(multi.getParameter("lat"));
 			String lng=String.valueOf(multi.getParameter("lng"));
@@ -145,8 +141,6 @@ public class RoomOutAction implements Action{
 	   		}
 	   		System.out.println("등록 완료");
 	   		
-	   		
-			//영학수정파트
 		forward.setRedirect(true);
    		forward.setPath("./RoomOut.do");
    		return forward;

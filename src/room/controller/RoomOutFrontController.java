@@ -26,13 +26,11 @@ public class RoomOutFrontController
 		String command=RequestURI.substring(contextPath.length());
 		ActionForward forward=null;
 		Action action=null;
-		System.out.println("실행");
 		
 		if(command.equals("/out.do")){
 			if(request.getSession(false) != null) {
 	            forward = new ActionForward();
 	            forward.setRedirect(false);
-	            System.out.println("들어옴");
 	            forward.setPath("out.jsp");
 	         } else {
 	            forward = new ActionForward();
